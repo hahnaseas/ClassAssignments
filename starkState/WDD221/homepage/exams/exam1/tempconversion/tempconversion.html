@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Hahna Seaman, Temperature Conversion Tool, 2/5/24 -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href='https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap' rel='stylesheet'>
+	<link rel="stylesheet" href="css/style.css">
+    <title>Temperature Conversion Tool</title>
+
+</head>
+
+<body>
+    <header>
+        <h1>
+            Temperature Conversion Tool
+        </h1>
+    </header>
+
+    <article>
+        <h2>Fahrenheit (°F) to Celsius (°C)</h2>
+        <form>
+            <fieldset>
+                <label for="FValue">
+                    Enter temperature in Fahrenheit
+                </label>
+                <input type="number" id="FValue" />
+            </fieldset>
+            <fieldset>
+                <button type="button" id="button">Convert to °C</button>
+            </fieldset>
+			
+            <fieldset>
+                <p>°F to °C</p>
+                <p id="CValue">&nbsp;</p>
+            </fieldset>
+        </form>
+    </article>
+
+    <script>
+        document.getElementById("button").addEventListener("click", convert, false);
+
+        function convert() {
+            const Fahrenheit = parseFloat(document.getElementById("FValue").value);
+            
+            if (!isNaN(Fahrenheit)) {
+                const Celsius = (Fahrenheit - 32) * 5 / 9;
+                document.getElementById("CValue").innerHTML = Celsius.toFixed(2);
+            } else {
+                alert("Please enter a valid temperature in Fahrenheit.");
+            }
+        }
+    </script>
+
+</body>
+
+</html>

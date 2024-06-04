@@ -1,0 +1,19 @@
+body {
+text-align: center;
+font-family: "Playfair Display";
+font-size: 18px;
+background-color: #008f5b;
+color: #ffffff;
+}
+
+h1 {
+background-color: #011936;
+color: #ffffff;
+font-style: bold;
+}
+
+.array-container {
+background-color: #1cb07a; 
+padding: 10px; 
+margin-top: 10px; 
+ }

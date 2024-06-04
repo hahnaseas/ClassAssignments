@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Hahna Seaman, Wk5Lab, 2/14/24 -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+	<script src="arrays.js"></script>
+    <title>Wk5 Lab: My Arrays</title>
+</head>
+
+<body>
+    <script>
+        let colorArray = new Array();
+
+        colorArray[0] = "Olive Green";
+        colorArray[1] = "Teal";
+        colorArray[2] = "Navy";
+        colorArray[3] = "Lime Green";
+        colorArray[4] = "Fuchsia";
+        colorArray[5] = "Lavender";
+
+        let counter1 = 0;
+        document.write("<h1>Elements of My Colors Array</h1>");
+        document.write('<div class="array-container">');
+
+        for (counter1 = 0; counter1 < colorArray.length; counter1++) {
+            document.write(colorArray[counter1] + "<br>");
+        }
+
+        document.write('</div>');
+    </script>
+
+    <script>
+        let favoriteGames = new Array();
+
+        favoriteGames[0] = "Tales of The Abyss";
+        favoriteGames[1] = "Stardew Valley";
+        favoriteGames[2] = "Rune Factory 4";
+        favoriteGames[3] = "Bravely Default";
+        favoriteGames[4] = "Zero Escape";
+        favoriteGames[5] = "Final Fantasy XIV";
+
+        let counter2 = 0;
+        document.write("<h1>Some of My Favorite Video Games Array</h1>");
+        document.write('<div class="array-container">');
+
+        for (counter2 = 0; counter2 < favoriteGames.length; counter2++) {
+            document.write(favoriteGames[counter2] + "<br>");
+        }
+
+        document.write('</div>');
+        document.write(`<p>My favorite color is <b>${colorArray[0]}</b> and my favorite game is <b>${favoriteGames[1]}</b>.</p>`);
+    </script>
+
+</body>
+
+</html>

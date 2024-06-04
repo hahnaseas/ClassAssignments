@@ -1,0 +1,56 @@
+<!-- Hahna Seaman, Web Dev with JavaScript: Exam 2 Part 2, 03/04/2024 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Exam 2 Part 2</title>
+</head>
+
+<body>
+
+<div id="name"></div>
+
+  <script>
+    'use strict'; // Make sure there are no undeclared variables
+
+    // Create function
+    function sumInput() {
+      let numbers = [];
+
+      while (true) { // Create a loop and allow for data entry
+        let value = prompt("Please enter a number. Press \"Cancel\" to quit!", 0);
+
+        if (value === "" || value === null || !isFinite(value)) break; // Ensure entry is a number
+
+        numbers.push(+value); // Populate array
+      }
+
+      let sum = 0;
+
+      for (let number of numbers) { // For loop to loop through the array
+        sum += number;
+      }
+
+      return sum;
+    }
+
+    // Call the function and store the result in a variable
+    let result = sumInput();
+
+	// Prompts user for name
+	function askForName() {
+		let name = prompt("What is Your Name?", "Johnny Appleseed");
+		if (name !== null) {
+			document.getElementById("name").innerHTML = "Hello, " + name + "! I hope you're having a good day so far!";
+		}
+	}
+
+	// Call the askForName function
+	askForName();
+
+    // Display the result using document.write
+    document.write(`<p>The sum is ${result}.</p>`);
+  </script>
+</body>
+</html>
