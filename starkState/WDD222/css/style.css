@@ -1,0 +1,36 @@
+body {
+  background-color: #8ebfe8;
+  color: white;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.content {
+  text-align: center;
+}
+
+img {
+	border: 15px solid pink;
+}
+
+a {
+	color: white;
+	font-size: 20px;
+}
+
+h1 {
+	color: #456c8c;
+}
+
+h2 {
+	color: #456c8c;
+	text-decoration: underline;
+}
+
+h3 {
+	color: #456c8c;
+}

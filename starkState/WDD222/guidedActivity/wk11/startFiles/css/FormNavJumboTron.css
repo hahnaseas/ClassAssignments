@@ -1,0 +1,48 @@
+body {
+	background-color: #212226;
+	font-family: Sans serif;
+	font-size: 18px;
+}
+
+.container {
+	background-color: #127f87;
+	padding: 2%;
+}
+
+#submit {
+	background-color: #32a852;
+	color: #fff;
+}
+
+button {
+	font-size: 14px;
+}
+
+.fa-brands fa-steam, p, .display-4 {
+	text-align: center;
+}
+
+i.fab.fa-steam {
+	color: #000000;
+}
+
+a, .display-4 {
+	color: #00ADEE;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #00ADEE;
+}
+
+.jumbotron {
+	background-color: #fff;
+}
+
+label { 
+	color: #fff;
+}
+
+.form-check-label {
+	font-size: 14px;
+} 

@@ -1,0 +1,14 @@
+.container {
+	background-color: #212226;
+	color: #fff;
+}
+
+.colbg {
+	background-color: #0e1c57;
+	color: #fff;
+}
+
+@media screen and (max-width: 480px) {
+	body {
+		background-color: black;
+	}

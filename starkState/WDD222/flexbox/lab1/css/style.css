@@ -1,0 +1,53 @@
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ }
+ 
+ body {
+	 font-family: 'Lexend Deca', sans-serif;
+	 	 background-color: #F1F2D0;
+ }
+ 
+ header {
+	 background-color: #EDEEC0;
+	 height: 100vh;
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+ }
+ 
+ .header_content
+ {
+	 text-align: center;
+ }
+ 
+ .header_heading 
+ {
+	 font-size: 4.5rem;
+	 margin: 2rem 0;
+	 color: #433E0E;
+ }
+ 
+ .header_btn
+ {
+	 display: inline-block;
+	 background-color: #7C9082;
+	 font-size: .9rem;
+	 line-height: 1;
+	 color: #fff;
+	 text-transform: uppercase;
+	 text-decoration: none;
+	 border: .1rem solid transparent;
+	 padding: 1.2rem 2.6rem;
+	 margin: .3rem;
+	 border-radius: 2rem;
+	 cursor: pointer;
+ }
+ 
+h2, p {
+	 background-color: #F1F2D0;
+	 color: #7C9082;
+	 justify-content: center;
+	 text-align: center;
+ }
