@@ -1,0 +1,67 @@
+<!-- This is a base template of a proper HTML5 page, please modify and update to meet the requirments of the week 1 lab -->
+<!-- Feel free to add addtional style sheets either here or in css folder -->
+
+<!-- Hahna Seaman, 1/19/23-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript Language Basics</title>
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <main>
+      <h1>Week 1~ JavaScript Code Practice</h1>
+      <!--adding an inline JavaScript code, must be enclosed within script tags/elements-->
+    </main>
+  
+  <script>
+
+console.log('Hello World'); //standard text
+
+console.log(3.5+22); // add 3.5 to age
+
+console.log(2024-1969); // subtract 1969 from current year
+
+console.log(65/240); // divide 65 by 240
+
+console.log(2.708*100); // multiply 2.708 by 100
+
+console.log('JavaScript is a fun language to learn!'.length);
+
+console.log('hello'.toUpperCase()); // HELLO  
+
+// to fix the following 'console.log(' Remove whitespace '.trim()));' we would use string.prototype.trim();
+
+const text = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ';
+console.log(text.trim());
+
+console.log(Math.random() * 50 ); // random number between 0 and 50 - answer will be a decimal
+
+// for whole numbers, we can use another method - this rounds down to the nearest whole number
+
+Math.floor(Math.random() * 50);
+
+// create a random number with math.random and multiply it by 100
+
+console.log(Math.random() * 100);
+
+// use math.floor to output a whole number
+
+console.log(Math.floor(Math.random() *100));
+
+// math.ceil() returns the smallest integer greater than or equal to a given number
+
+console.log(Math.ceil(43.8));
+// expected output: 44
+
+// number.isinteger checks if a number is an integer
+
+console.log(Number.isInteger(2017));
+
+  </script>
+  </body>
+</html>

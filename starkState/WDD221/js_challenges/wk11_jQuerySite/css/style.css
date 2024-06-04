@@ -1,0 +1,20 @@
+body {
+	font-size: 16px;
+	background-color: #3D4861;
+	color: #EFEFF1;
+	font-family: Georgia;
+}
+
+h1 {
+	background-color: #EDEFF4;
+	color: #3D4861;
+	padding: 15px;
+}
+
+li {
+	align-content: center;
+}
+
+.text-underline {
+	text-decoration: underline;
+}

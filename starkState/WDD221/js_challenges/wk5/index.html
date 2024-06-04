@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="game.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <title>Guessing Game by Professor Yoda</title>
+</head>
+
+<body onload="newGame()">
+    <h1>Yoda's Guessing Game!</h1>
+    <form onsubmit="checkGuess(); return false;">
+        <h2>Enter a Number Between 1 and 100:</h2>
+        <input type='text' id='guess' size='5' required /> 
+        <button type="button" onclick="checkGuess()">Guess!</button>
+        <br><br>
+    </form>
+
+    <h3 id='output'>Guess a number and press the button.</h3>
+    <h2 id="scoreboard"></h2>
+</body>
+
+</html>

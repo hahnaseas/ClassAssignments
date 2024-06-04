@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Wk11 jQuery Site</title>
+    <link rel="stylesheet" href="css/style.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+  
+<h1>What is jQuery? An Instructional Site on jQuery:</h1>
+<p>
+In short, jQuery is a JavaScript library and was created to make it much easier to use JavaScript. It simplifies many of JavaScript's basic functions including, but not limited to, HTML/DOM/CSS manipulation, AJAX, HTML event methods, and effects and animation.
+</p>
+
+<br>
+
+<p class="text-underline">Two Examples Using jQuery:</p>
+<ol>
+<li>Click Method - Click()</li>
+<li>Keypress Method - Keypress()</li>
+</ol>
+
+<br>
+
+<p><b>Example One: Click();</b></p>
+<p>
+This method attaches an event handler to elements for the event and is executed when the user clicks on the element and hides paragraph elements.
+</p>
+<p><b>Click me!</b></p>
+
+<script>
+	$(document).ready(function(){
+    $("p").click(function(){
+        $(this).slideUp();
+    });
+});
+	</script>
+	
+	<br>
+	
+<p><b> Example Two: Keypress();</b></p>
+<p>
+This method attaches an event handler function to elements that when executed, the browser displays a message when the keypress event is pressed, as well as how many times it is entered.
+</p>
+
+<br>
+
+<input type="text">
+    <div><i>Keypress: <span>0</span></i></div><br>
+	<div><strong>Instructions:</strong> Enter a number or letter inside the input box and see the result.</div>
+    <p>Keypress is triggered.</p>
+	
+	<script>
+$(document).ready(function(){
+    var i = 0;
+    $('input[type="text"]').keypress(function(){
+        $("span").text(i += 1);
+        $("p").show().fadeOut();
+    });
+});
+</script>
+
+<br><p><big>Note: Test one example at a time. If you test example 2, then all paragraphs (minus div, header, and the list) will disappear. Refresh the page when this happens.</big></p>
+
+<br><br>
+
+</body>
+</html>
