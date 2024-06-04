@@ -1,0 +1,51 @@
+.content {
+	margin: auto;
+}
+
+.custom-search-bar {
+	font-family: sans-serif;
+  max-width: 200px;
+}
+
+.footer {
+  font-family: sans-serif;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: auto; 
+  background-color: #333; 
+  color: white; 
+  padding: 15px; 
+}
+
+
+.container-review {
+	background-color: #669999;
+	color: #FFFFFF;
+	font-size: 83%;
+	font-family: sans-serif;
+}
+
+.container-review p {
+	margin-bottom: 5px;
+}
+
+table {
+	background-color: grey;
+}
+
+table, tr, th, td {
+	color: white;
+} 
+
+tr {
+	background-color: #5fc26f;
+}
+
+th {
+	font-weight: bold;
+}
+
+td {
+	background-color:#d3d3d3;
+}
