@@ -1,0 +1,386 @@
+﻿/* 
+	B&B styles
+
+/* reset styles */
+html 
+{
+   font-size: 16px;
+}
+
+a, article, body, div, fieldset, figcaption, figure, footer, form, header, h1, 
+h2, h3, img, input, label, legend, li, nav, p, section, textarea, ul 
+{
+   border: 0;
+   padding: 0;
+   margin: 0;
+}
+
+img 
+{
+   max-width: 100%;
+   height: auto;
+   width: auto;
+}
+
+ul 
+{
+   list-style-type: none;
+}
+
+/* document-wide styles */
+body 
+{
+   margin: 0 auto;
+   font-family: Arial, Helvetica, sans-serif;
+   background: #7eccec;
+  /* gradient style goes here */
+  background: linear-gradient(#7eccec, #fff) no-repeat;
+}
+
+a:link 
+{
+   color: #000;
+}
+
+a:visited 
+{
+   color: #888;
+}
+
+.background-art 
+{
+   position: absolute;
+}
+
+/* sun shape class goes here */
+
+.sun-shape{
+	width: 200px;
+	height: 200px;
+	background-color: rgb(253, 148, 42);
+	border-radius: 50%;
+	position: absolute;
+	left: -80px;
+	top: -80px;
+	z-index: -2;
+	box-shadow: 0 0 25px rgb(254, 230, 55),
+				0 0 25px rgb(254, 230, 55) inset;
+}
+
+.no-borderradius .sun-shape 
+{
+   background: url("images/sun.png");
+}
+
+.cloud-image 
+{
+   max-width: none;
+   display: block;
+   position: absolute;
+   left: 100px;
+   z-index: -1;
+   /* animation code */
+   animation-duration: 3s;
+   animation-duration: 3s;
+   -webkit-animation-timing-function: linear;
+   animation-timing-function: linear;
+   -webkit-animation-name: reveal-sun;
+   animation-name: reveal-sun;
+}
+
+@-webkit-keyframes reveal-sun{
+	0%{
+		left: -150px;
+	}
+	
+	50%{
+		left: -50px;
+	}
+	
+	100% {
+		100px;
+	}
+}
+
+/* skip navigation link */
+p.skipnavigation a 
+{
+   position: absolute;
+   left: -10000px;
+}
+
+p.skipnavigation a:focus 
+{
+   color: #fffff0;
+   background-color: #34180f;
+   top: 0.4em;
+   left: auto;
+   right: 0.4em;
+   z-index: 2;
+}
+
+/* header section */
+header
+{
+   max-width: 800px;
+   margin: 0 auto;
+}
+h1 
+{
+   text-align: center;
+   font-family: Bitter, "Times New Roman", Times, serif;
+   font-weight: 700;
+   color: #fffff0;
+   background-color: #fff;
+   font-size: 2.4em;
+}
+
+/* site navigation bar */
+nav.sitenavigation 
+{
+   max-width: 800px;
+   margin: 0 auto;
+   color: #34180f;
+   text-align: center;
+   background-color: #B8944D;
+}
+
+nav.sitenavigation li
+{
+   margin: 0.3em 0.5em;
+   padding: 0.2em 0.4em;
+   display: inline-block;
+   font-size: 1.3em;
+   line-height: 1.4em;
+   border-radius: 10px;
+   /* transition code goes here */ 
+	-webkit-transition-duration: .2s;
+	transition-duration: .2s;
+	-webkit-transition-timing-function: ease-in;
+	transition-timing-function: ease-in;
+}
+
+nav.sitenavigation li:hover 
+{
+  /* new code goes here */
+  background-color: #34180f;
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+
+}
+
+nav.sitenavigation a:link 
+{
+   text-decoration: none;
+   color: #34180f;
+}
+
+nav.sitenavigation a:visited 
+{
+   color: #744f42;
+}
+
+nav.sitenavigation a:hover, nav.sitenavigation a:focus {
+   color: #fffff0;
+}
+
+/* main content */
+article 
+{
+   max-width: 740px;
+   margin: 0 auto;
+   padding: 0 30px 1em;
+   background-color: #fffff0;
+   overflow: auto;
+}
+
+h2 
+{
+   padding: 0.4em;
+   text-align: center;
+   font-family: Bitter, "Times New Roman", Times, serif;
+   font-size: 2em;
+   font-weight: 700;
+}
+
+h3 
+{
+   margin: 1.4em 0 0.5em;
+   font-size: 1.6em;
+   font-family: Bitter, "Times New Roman", Times, serif;
+   font-weight: 700;
+   clear: both;
+}
+
+/* form styles */
+form 
+{
+   max-width: 400px;
+   padding: 10px;
+   margin: 0 auto;
+}
+
+.form-instructions 
+{
+   color: #f00;
+   text-align: center;
+}
+
+/* fieldset styles */
+fieldset 
+{
+   margin-bottom: 0.8em;
+}
+
+legend 
+{
+   font-size: 1.25em;
+}
+
+.reserveinfo 
+{
+   position: relative;
+}
+
+.submitbutton 
+{
+   text-align: center;
+}
+
+/* field styles */
+input, textarea 
+{
+   border: 1px solid #ccc;
+   padding: 0.2em;
+   font-size: 1em;
+   display: block;
+}
+
+/* new field styles go here */
+
+input:valid{
+	background-color: #d1f4bd;
+}
+
+input:focus, textarea:focus{
+	background-color: #cce5ef;
+}
+
+select 
+{
+   padding: 0.2em;
+   margin-top: 0.2em;
+   font-size: 1em;
+}
+
+input, select 
+{
+   margin-bottom: 0.6em;
+}
+
+textarea 
+{
+   width: 25em;
+   height: auto;
+}
+
+.contactinfo input 
+{
+   width: 25em;
+}
+
+.reserveinfo input 
+{
+   width: 5em;
+}
+
+#submit 
+{
+   border: none;
+   border-bottom: 1px solid #666;
+   border-right: 1px solid #777;
+   padding: 0.4em 0.6em;
+   margin: 0;
+   display: inline-block;
+   background-color: #e3d5ba;
+   font-size: 1.25em;
+   border-radius: 10px;
+}
+
+/* label styles */
+label, .reserveinfo p 
+{
+   font-size: 1em;
+   line-height: 1.6em;
+   font-weight: bold;
+}
+
+/* new label styles go here */
+
+/* adds a red asterik before html code */
+label:before, .reserveinfo p:before{
+	content: "* ";
+	color: #f00;
+}
+
+/* because text area isnt required, it is set with an empty string */
+.additionalinfo label:before{
+	content: "";
+}
+
+.contactinfo label, .reserveinfo label 
+{
+   margin: 0.8em 0;
+}
+
+.reserveinfo label 
+{
+   margin-bottom: 0.6em;
+   display: block;
+}
+
+.date-picker label 
+{
+   position: absolute;
+   left: -10000px;
+}
+
+.two-column 
+{
+   width: 50%;
+   float: left;
+}
+
+/* footer section */
+footer 
+{
+   max-width: 800px;
+   margin: 0 auto;
+   padding: 0.6em 0;
+   background-color: #34180f;
+   color: #fffff0;
+   text-align: center;
+}
+
+/* print styles */
+@media print 
+{
+   body, h1, article, footer 
+   {
+      color: rgb(0,0,0);
+      background: rgb(255,255,255);
+   }
+   body 
+   {
+      max-width: 100%;
+   }
+   nav 
+   {
+      display: none;
+   }
+}
+@page
+{
+   margin: 0.75in;
+}

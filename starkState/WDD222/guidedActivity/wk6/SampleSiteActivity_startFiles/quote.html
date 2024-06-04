@@ -1,0 +1,133 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Lakeland Reeds Bed &amp; Breakfast - Request a Quote</title>
+      <!-- 
+         Lakeland Reeds Bed & Breakfast Request a Quote page
+      -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+	   <!--this is a JavaScript library that detects which HTML5 & CSS3 features your visitor's browser supports-->
+      <script src="js/modernizr.custom.28018.js"></script>
+      <link href='http://fonts.googleapis.com/css?family=Bitter:400,700' rel='stylesheet' type='text/css'>
+      <link rel="stylesheet" href="css/styles.css">
+      <link rel="shortcut icon" href="images/favicon.ico">
+      <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+      <link rel="icon" sizes="192x192" href="images/android.png">
+   </head>
+   <body>
+      <p class="skipnavigation"><a href="#contentstart">Skip navigation</a></p> 
+      <div class="background-art">
+         <div class="sun-shape"></div>
+         <img src="images/cloud.png" class="cloud-image" width="234" height="150" alt="">
+      </div>
+      <header>
+         <h1><a href="index.html"><img src="images/lakeland.gif" width="659" height="165" alt="Lakeland Reeds Bed and Breakfast"></a></h1>
+      </header>
+      <nav class="sitenavigation">
+         <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="reserve.html">Reservations</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+         </ul>
+      </nav>
+      <article id="contentstart">
+         <h2>Request a Quote</h2>
+         <form action="results.html">
+            <p class="form-instructions">* indicates a required field</p>
+            <fieldset class="contactinfo">
+               <label for="nameinput">
+                  Name
+                  <input type="text" name="name" id="nameinput" required>
+               </label>
+               <label for="emailinput">
+                  Email
+                  <input type="email" name="email" id="emailinput" required>
+               </label>
+            </fieldset>
+            <fieldset class="reserveinfo">
+               <p>Start date</p>
+               <div class="date-picker">
+                  <label for="start-month">Start Month</label>
+                  <select id="start-month" name="start-month">
+                     <option value="01">January</option>
+                     <option value="02">February</option>
+                     <option value="03">March</option>
+                     <option value="04">April</option>
+                     <option value="05">May</option>
+                     <option value="06">June</option>
+                     <option value="07">July</option>
+                     <option value="08">August</option>
+                     <option value="09">September</option>
+                     <option value="10">October</option>
+                     <option value="11">November</option>
+                     <option value="12">December</option>
+                  </select>
+                  <label for="start-day">Start Day</label>
+                  <select id="start-day" name="start-day">
+                     <option value="01">1</option>
+                     <option value="02">2</option>
+                     <option value="03">3</option>
+                     <option value="04">4</option>
+                     <option value="05">5</option>
+                     <option value="06">6</option>
+                     <option value="07">7</option>
+                     <option value="08">8</option>
+                     <option value="09">9</option>
+                     <option value="10">10</option>
+                     <option value="11">11</option>
+                     <option value="12">12</option>
+                     <option value="13">13</option>
+                     <option value="14">14</option>
+                     <option value="15">15</option>
+                     <option value="16">16</option>
+                     <option value="17">17</option>
+                     <option value="18">18</option>
+                     <option value="19">19</option>
+                     <option value="20">20</option>
+                     <option value="21">21</option>
+                     <option value="22">22</option>
+                     <option value="23">23</option>
+                     <option value="24">24</option>
+                     <option value="25">25</option>
+                     <option value="26">26</option>
+                     <option value="27">27</option>
+                     <option value="28">28</option>
+                     <option value="29">29</option>
+                     <option value="30">30</option>
+                     <option value="31">31</option>
+                  </select>
+                  <label for="start-year">Start Year</label>
+                  <select id="start-year" name="start-year">
+                     <option value="2020">2020</option>
+                     <option value="2021">2021</option>
+                     <option value="2022">2022</option>
+                  </select>
+               </div>
+               <label for="quote-days" class="two-column">
+                  Number of days
+                  <input type="number" name="days" id="quote-days" required>
+               </label>
+               <label for="quote-guests" class="two-column">
+                  Number of guests
+                  <input type="number" name="guests" id="quote-guests" required>
+               </label>
+            </fieldset>
+            <fieldset class="additionalinfo">
+               <label for="other-info">
+                  Other information (hours, catering needs, etc.)
+                  <textarea name="other-info" id="other-info" rows="5" cols="50"></textarea>
+               </label>
+            </fieldset>
+            <fieldset class="submitbutton">
+               <input type="submit" id="submit" value="Submit">
+            </fieldset>
+         </form>
+      </article>
+      <footer>
+         <p>45 Marsh Grass Ln. &bull; Marble, MN 55764 &bull; (218) 555-5253</p>
+      </footer>
+   </body>
+</html>
