@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <!--
+     Week Three Activity ~ Conversion Tool
+
+   -->
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+   <title>Conversion Tool</title>
+   <link rel="stylesheet" href="css/styles.css" />
+   <script src="js/modernizr.custom.05819.js"></script>
+</head>
+
+<body>
+   <header>
+      <h1>
+         Conversion Tool
+      </h1>
+   </header>
+
+   <article>
+      <h2>Pounds (lbs) to Kilograms (kgs)</h2>
+      <form>
+          <fieldset>
+            <label for="lbValue">
+              Enter a value for lbs
+            </label>
+            <input type="number" id="lbValue" />
+          </fieldset>
+          <fieldset>
+            <button type="button" id="button">Convert to Kg</button>
+          </fieldset>
+          <fieldset>
+             <p>Pound to Kilograms</p>
+            <p id="kgValue">&nbsp;</p>
+          </fieldset>
+     </form>
+   </article>
+   
+   <script>
+     function convert()
+	 {
+	 const unit = 0.453592 
+	 const lbs = document.getElementById("lbValue").value;
+	 
+	 const kgs = Math.round((unit * lbs));
+	 
+	 document.getElementById("kgValue").innerHTML = kgs;
+	 }
+	 
+	 document.getElementById("button").addEventListener("click", convert, false);
+	 
+   </script>
+   
+</body>
+</html>

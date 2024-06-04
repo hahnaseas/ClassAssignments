@@ -1,0 +1,22 @@
+body {
+  font-family: 'Georgia';
+  font-size: 16px;
+  text-align: center;
+  color: white;
+}
+
+.container {
+  background-color: #E8E8E8;
+  color: black;
+  padding: 15px;
+  border: 5px solid #404040;
+  font-size: 16px;
+
+}
+
+#text {
+  text-align: center;
+  font-family: 'Georgia';
+  font-size: 16px;
+  color: black;
+}

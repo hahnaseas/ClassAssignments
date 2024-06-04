@@ -1,0 +1,141 @@
+body
+{
+    font-family: fantasy;
+}
+
+#mapContainer
+{
+    background-image: url(../images/USmap.png);
+    background-repeat: no-repeat;
+    position:        absolute;
+    width:           1200px;
+    height:          100%;
+}
+
+.place img
+{
+    width:  10px;
+    float:  left;
+}
+
+.visible
+{
+    visibility: visible;
+}
+
+.invisible
+{
+    visibility: hidden;
+}
+
+#menuBox
+{
+    position: absolute;
+    top:    100px;
+    left:   1300px;
+    background-color: #d5f678;
+    padding:   10px;
+    border-style:  solid;
+    border-color: #78f6dd;
+    border-radius: 7px;
+
+}
+
+.place
+{
+    position: absolute; /*pins to represent specific x an y coords*/
+    background-color: #ffebcd;
+    padding:    3px;
+    width:      75px;
+    font-size:  10px;
+    font-weight: bolder;
+    border-radius: 7px;
+}
+
+.visitedOk
+{
+    background-color:  #f6d278;
+}
+
+.visitedNOTOk
+{
+    background-color:   #ff3374;
+}
+
+.noDesire
+{
+    background-color:   #789af6;
+}
+
+
+#place1 /*mi*/
+{
+    left:   800px;
+    top:    250px;   
+}
+
+#place2 /*oh*/
+{
+    left:   900px;
+    top:    350px;   
+}
+
+#place3 /*ky*/
+{
+    left:   850px;
+    top:    425px;   
+}
+
+#place4 /*wy*/
+{
+    left:   350px;
+    top:    400px;   
+}
+
+#place5 /*fl*/
+{
+    left:   925px;
+    top:    700px;   
+}
+
+#place6 /*ca*/
+{
+    left:   50px;
+    top:    400px;   
+}
+
+#place7 /*az*/
+{
+    left:   200px;
+    top:    525px;   
+}
+
+#place8 /*ok*/
+{
+    left:   550px;
+    top:    520px;   
+}
+
+#place9 /*tx*/
+{
+    left:   525px;
+    top:    625px;   
+}
+
+#place10 /*me*/
+{
+    left:   1100px;
+    top:    150px;   
+}
+
+#place11 /*wa*/
+{
+    left:   90px;
+    top:    90px;   
+}
+
+#place12 /*la*/
+{
+    left:   650px;
+    top:    650px;   
+}

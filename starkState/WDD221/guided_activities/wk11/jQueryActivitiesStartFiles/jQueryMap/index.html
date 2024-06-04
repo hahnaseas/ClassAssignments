@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>JavaScript Language Basics</title>
+        <link rel = "stylesheet" href = "css/style.css">
+    </head>
+
+    <body>
+        <h1>Interactive Map</h1>
+
+        <!--map container-->
+        <div id = "mapContainer"></div>
+
+        <!--div for location-->
+        <div id = "locations">
+
+        <div class = "place visitedOk" id = "place1">
+
+            <img src = "images/mapPin.jpg"><p> MI ~ Drummond IS  </p>
+
+        </div>
+        <div class = "place visitedOk" id = "place2">
+
+            <img src = "images/mapPin.jpg"><p> OH ~ has it all  </p>
+    
+        </div>
+        
+        <div class = "place visitedOk" id = "place3">
+
+            <img src = "images/mapPin.jpg"><p> KY ~ horses  </p>
+        
+        </div>
+        
+        <div class = "place visitedOk" id = "place4">
+
+            <img src = "images/mapPin.jpg"><p> WY ~ Tetons  </p>
+            
+        </div>
+
+        <div class = "place visitedNOTOk" id = "place5">
+
+            <img src = "images/mapPin.jpg"><p> FL ~ Hurricanes  </p>
+                
+        </div>
+
+        <div class = "place visitedNOTOk" id = "place6">
+        
+           <img src = "images/mapPin.jpg"><p> CA ~ Earthquakes  </p>
+                    
+        </div>
+
+        <div class = "place visitedNOTOk" id = "place7">
+
+            <img src = "images/mapPin.jpg"><p> AZ ~ Snakes  </p>
+                    
+        </div>
+
+        <div class = "place visitedNOTOk" id = "place8">
+
+            <img src = "images/mapPin.jpg"><p> OK ~ Tornadoes  </p>
+                    
+        </div>
+
+        <div class = "place visitedNOTOk" id = "place9">
+
+            <img src = "images/mapPin.jpg"><p> TX ~ Tornadoes  </p>
+                    
+        </div>
+
+        <div class = "place noDesire" id = "place10">
+
+                <img src = "images/mapPin.jpg"><p> ME ~ Too Cold  </p>
+                    
+        </div>
+
+        <div class = "place noDesire" id = "place11">
+
+            <img src = "images/mapPin.jpg"><p> WA ~ People Rust  </p>
+                    
+        </div>
+
+        <div class = "place noDesire" id = "place12">
+
+            <img src = "images/mapPin.jpg"><p> LA ~ Flood  </p>
+                    
+        </div>
+        </div>
+
+        <div id = "menuBox">
+            Please select a category:
+            <br>
+            <select name = "place" id = "place">
+                <option value = "All">Show All Places</option>
+                <option value = "visitedOk">Visited ~ OK</option>
+                <option value = "visitedNOTOk">Visited ~ NOT OK</option>
+                <option value = "noDesire">No Desire to Visit</option>
+            </select>
+        </div>
+
+    <script src = "js/jquery.js"></script>
+	<script src = "js/map.js"></script>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

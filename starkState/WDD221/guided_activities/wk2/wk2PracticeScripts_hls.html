@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>JavaScript Language Basics</title>
+</head>
+
+<body>
+<h1>JavaScript Language Basics</h1>
+
+<button onclick="myFunction()">Click Me!</button><br>
+
+<script>
+
+/* Name: Hahna Seaman
+Date: 1/23/24 */
+
+function myFunction() {
+  alert("Hello there! I am an alert box!");
+}
+
+const favFood = prompt('What is your favorite food?');
+const codePrac = prompt('How many hours a day will you practice coding?');
+const hours = codePrac * 365;
+
+document.write('<br>Your favorite food is ' + favFood);
+document.write('<br>You will practice ' + codePrac + ' hrs a day which equates to ' + hours + ' hours a year. Will this be enough hours to become an expert?' );
+
+// another script that uses prompts and then performs a math equation
+
+const Age = prompt('How old are you?');
+const Major = prompt('What is your major?');
+const calc = prompt('What is 2+2?');
+const total = (calc == 4) ? 'correct' : 'incorrect'; 
+
+document.write('<br>You are ' + Age + ' yrs old' );
+document.write('<br>You are a ' + Major + ' major' );
+document.write('<br>The total is ' + total);
+</script>
+
+<script>
+function changeText()
+{
+document.getElementById('newText').innerHTML = 'JavaScript is so much FUN!';
+}
+
+</script>
+
+<p>Your thoughts on JavaScript! <strong id='newText'>This text will be replaced!</strong> </p>
+<input type='button' onClick='changeText()' value='Click for new text!'>
+
+</body>
+</html>
