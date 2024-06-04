@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>JavaScript Form Validation</title>
+
+<style>
+	input
+	{
+		border-radius:20px;
+	}
+</style>
+
+</head>
+
+<body>
+
+<h1>Basic Form Validation</h1>
+
+<p>Give me a Positive Integer</p>
+<input id="number">
+<button type="button" onclick="myFunction()">Submit</button>
+<p id="entry"></p>
+
+<script>
+function myFunction() 
+{
+	let x, text;
+	// obtain the value of the input field with id="number"
+	x = document.getElementById("number").value;
+	
+// If x is less than 0, input is invalid
+//otherwise input is valid
+	if (isNaN(x) || x < 0) 
+	{
+	text = "Input invalid";
+	} 
+	else 
+	{
+	text = "Valid input";
+	}
+	document.getElementById("entry").innerHTML = text;
+}
+</script>
+</body>
+</html>
